@@ -22,7 +22,7 @@ int _puts(char *str)
  * Return: 1 on SUCCESS
  * -1 on fail
  */
-int _putchar(char c)
+int _putchar(int c)
 {
 	static int count;
 	static char buf[OUTPUT_BUF_SIZE];
