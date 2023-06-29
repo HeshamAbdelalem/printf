@@ -1,6 +1,21 @@
 #include "main.h"
 
 /**
+ * _puts - prints a string followed by newline
+ * @str: the string to be pronted
+ * Return: 0
+ */
+int _puts(char *str)
+{
+	char *a = str;
+
+	while (*str)
+	{
+		_putchar(*str++);
+	}
+	return (str - a);
+}
+/**
  * _putchar - prints a character to stdout
  * @c: the character
  *
@@ -22,18 +37,3 @@ int _putchar(char c)
 	return (1);
 }
 
-/**
- * _puts - prints a string followed by newline
- * @str: the string to be pronted
- * Return: 0
- */
-int _puts(char *str)
-{
-	char *a = str;
-
-	while (*str)
-	{
-		_putchar(*str++);
-	}
-	return (str - a);
-}
